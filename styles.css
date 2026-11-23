@@ -1,0 +1,29 @@
+*{box-sizing:border-box}
+body{font-family:system-ui,Arial,sans-serif;background:#f6f7f9;color:#111;margin:0;padding:20px}
+.wrap{max-width:900px;margin:auto}
+.card{background:#fff;border:1px solid #ddd;border-radius:12px;padding:18px;margin:16px 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{display:block;font-weight:600;margin-bottom:4px}
+input,select{width:100%;padding:10px;border:1px solid #aaa;border-radius:8px;font-size:16px}
+input:focus,select:focus,button:focus{outline:3px solid #005fcc;outline-offset:2px}
+button{padding:10px 16px;border:0;border-radius:8px;background:#111;color:#fff;cursor:pointer;font-weight:600;margin-top:10px}
+button:hover{background:#333}
+#cancelBtn{background:#666}
+#clearBtn{background:#b42318}
+.error{color:#b42318;min-height:18px;margin:4px 0 0;font-size:14px}
+.summary{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+.stat{background:#fff;border:1px solid #ddd;border-radius:12px;padding:16px;text-align:center}
+.stat span{display:block;color:#555}
+.stat strong{font-size:24px}
+.chart{display:flex;align-items:flex-end;gap:16px;height:180px;border-bottom:2px solid #111;padding:10px 10px 0;margin-top:10px}
+.bar-wrap{display:flex;flex-direction:column;align-items:center;gap:6px;flex:1}
+.bar{width:100%;max-width:60px;background:#005fcc;border-radius:6px 6px 0 0;min-height:4px}
+.bar-label{font-size:13px;text-align:center}
+.bar-value{font-size:13px;font-weight:700}
+#list{list-style:none;padding:0;margin:0}
+#list li{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px;border-bottom:1px solid #eee}
+.badge{font-weight:700}
+.income-text{color:#067647}.expense-text{color:#b42318}
+.item-btns button{margin:0 0 0 6px;padding:6px 10px;font-size:14px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+@media(max-width:600px){.grid,.summary{grid-template-columns:1fr}}
